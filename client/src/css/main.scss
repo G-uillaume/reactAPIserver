@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+
+body {
+    background: url('../img/background.jpeg');
+    background-attachment: fixed;
+    font-family: 'Racing Sans One', cursive;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.flex {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+}
+
+
+.header {
+    a {
+      text-decoration: none;
+      color: #000;
+      font-size: 2em;
+      font-weight: 700;
+    }
+    a:hover {
+      transform: scale(1.2);
+    }
+    h1 {
+      font-size: 3em;
+    }
+}
+
+.center-flex {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.home {
+  align-items: flex-start;
+  a {
+      margin-top: 50px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 4em;
+      color: #a83324;
+  }
+}
+
+.center-flex a:hover {
+    transform: scale(1.2);
+}
+
+.column {
+    flex-direction: column;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    padding: 0;
+}
+
+.title {
+    text-align: center;
+}
+
+.addTitle {
+  color: #f2edd9;
+  font-size: 4em;
+}
+
+.addForm {
+  width: 25vw;
+  p {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    input, select {
+      width: 50%;
+      padding: 0;
+      border-width: 1px;
+      border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    }
+  }
+  .buttonsAdd {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    button {
+      font-family: 'Racing Sans One', cursive;
+      border: none;
+      background-color: transparent;
+      font-size: 2em;
+      color:#a83324;
+    }
+    button:hover {
+      transform: scale(1.2);
+      cursor: pointer;
+    }
+    a {
+      text-decoration: none;
+      font-size: 2em;
+      color:#a83324;
+    }
+  }
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 80%;
+    height: 220px;
+    margin-bottom: 10px;
+    // border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateX(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    border-radius: 10px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: rgba(44, 7, 7, 0.5);
+    color: #eee;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: rgba(44, 7, 7, 0.5);
+    color: white;
+    transform: rotateX(180deg);
+    form {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    input {
+      outline: none;
+      border-radius: 0 100% 100% 0;
+      width: 90%;
+      box-shadow: 2px 2px 10px #f2edd9;
+      background-color: #ddd;
+    }
+
+  }
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    a {
+      text-decoration: none;
+      color: #000;
+      border: 1px solid #888;
+      padding: 5px;
+      background-color: #eee;
+      border-radius: 3px;
+      font-size: 0.9em;
+    }
+    button {
+      border: none;
+      outline: none;
+      border-radius: 10px;
+      padding: 5px 10px;
+      font-size: 1.2em;
+      font-family: 'Racing Sans One', cursive;
+      color: #eee;
+      background-color: transparent;
+    }
+    button:hover {
+      cursor: pointer;
+      transform: scale(1.2);
+    }
+}
+
